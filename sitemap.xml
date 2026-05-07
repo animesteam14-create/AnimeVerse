@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://animesteam14-create.github.io/AnimeVerse/</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://example.com/#/search</loc>
+    <loc>https://animesteam14-create.github.io/AnimeVerse/#/search</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.com/#/search?order=popularity</loc>
+    <loc>https://animesteam14-create.github.io/AnimeVerse/#/search?order=popularity</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://example.com/#/search?order=score</loc>
+    <loc>https://animesteam14-create.github.io/AnimeVerse/#/search?order=score</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://example.com/#/search?genre=1</loc>
+    <loc>https://animesteam14-create.github.io/AnimeVerse/#/search?genre=1</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://example.com/#/search?genre=22</loc>
+    <loc>https://animesteam14-create.github.io/AnimeVerse/#/search?genre=22</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://example.com/#/about</loc>
+    <loc>https://animesteam14-create.github.io/AnimeVerse/#/about</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://example.com/#/privacy</loc>
+    <loc>https://animesteam14-create.github.io/AnimeVerse/#/privacy</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://example.com/#/terms</loc>
+    <loc>https://animesteam14-create.github.io/AnimeVerse/#/terms</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://example.com/#/contact</loc>
+    <loc>https://animesteam14-create.github.io/AnimeVerse/#/contact</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
