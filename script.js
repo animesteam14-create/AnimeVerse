@@ -1,7 +1,7 @@
 "use strict";
 
 const API = "https://api.jikan.moe/v4";
-const SITE_URL = "https://example.com/";
+const SITE_URL = "https://animesteam14-create.github.io/AnimeVerse/";
 const LEGAL_LINKS = [
   ["Crunchyroll", "https://www.crunchyroll.com/search?q="],
   ["Netflix", "https://www.netflix.com/search?q="],
