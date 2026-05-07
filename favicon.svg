@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AnimeVerse logo">
+  <defs>
+    <linearGradient id="markGradient" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a855f7"/>
+      <stop offset="0.52" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#ff4ecd"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#090713"/>
+  <rect x="7" y="7" width="50" height="50" rx="12" fill="url(#markGradient)"/>
+  <path d="M20 44L29 20h6l9 24h-6l-1.7-5.1h-8.7L26 44h-6zm9.2-10.3h5.5L32 25.2l-2.8 8.5z" fill="#fff"/>
+  <path d="M42 20h6l-7.8 24h-5.9l2.5-7.1L42 20z" fill="#fff" opacity="0.92"/>
+</svg>

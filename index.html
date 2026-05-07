@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the best anime to watch next with trending shows, ratings, trailers, characters, episode info, favorites, and legal streaming links.">
+  <meta name="keywords" content="anime discovery, best anime to watch, anime search, top rated anime, trending anime, legal anime streaming">
+  <meta name="author" content="AnimeVerse">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#090713">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://example.com/">
+  <meta property="og:title" content="AnimeVerse - Find the Best Anime to Watch Next">
+  <meta property="og:description" content="Search anime by genre, rating, and popularity. Explore trailers, characters, episode info, and legal watch options.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AnimeVerse - Find the Best Anime to Watch Next">
+  <meta name="twitter:description" content="Discover trending, popular, and top-rated anime with trailers, ratings, and legal watch links.">
+  <title>AnimeVerse - Best Anime Discovery, Ratings & Legal Watch Links</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.jikan.moe">
+  <link rel="preconnect" href="https://cdn.myanimelist.net">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script type="application/ld+json" id="baseSchema">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AnimeVerse",
+      "url": "https://example.com/",
+      "description": "AnimeVerse helps fans discover trending, popular, and top-rated anime with trailers, ratings, characters, and legal streaming links.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://example.com/#/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="page-loader" id="pageLoader" role="status" aria-live="polite">
+    <div class="intro-stage" aria-hidden="true">
+      <span class="intro-sun"></span>
+      <span class="energy-core"></span>
+      <span class="energy-beam"></span>
+      <span class="sword-arc sword-arc-one"></span>
+      <span class="sword-arc sword-arc-two"></span>
+      <span class="spark spark-one"></span>
+      <span class="spark spark-two"></span>
+      <span class="spark spark-three"></span>
+    </div>
+    <div class="intro-copy">
+      <strong>AnimeVerse intro animation</strong>
+      <span>Loading legal anime guides, trailers, ratings, and watch links</span>
+    </div>
+    <button class="intro-skip" id="introSkip" type="button">Skip intro</button>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#/home" aria-label="AnimeVerse home">
+        <span class="brand-mark">AV</span>
+        <span>AnimeVerse</span>
+      </a>
+      <button class="nav-toggle icon-button" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#/home" data-nav="home">Home</a>
+        <a href="#/search" data-nav="search">Search</a>
+        <a href="#/favorites" data-nav="favorites">Favorites</a>
+        <a href="#/about" data-nav="about">About</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme">
+        <span class="theme-icon">D</span>
+        <span class="theme-label">Dark</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="app" class="app-shell" tabindex="-1">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-backdrop" id="heroBackdrop"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Legal anime discovery</p>
+        <h1 id="heroTitle">Discover the best anime to watch next.</h1>
+        <p class="hero-copy">Search trending anime, compare ratings, explore trailers, check characters, build a watchlist, and find official watch options without pirated streams.</p>
+        <form class="hero-search" id="globalSearchForm" role="search">
+          <input id="globalSearchInput" type="search" placeholder="Search anime, e.g. Jujutsu Kaisen" autocomplete="off" aria-label="Search anime">
+          <button type="submit">Search</button>
+          <div class="quick-results" id="quickResults" aria-live="polite"></div>
+        </form>
+        <div class="hero-actions">
+          <a class="primary-cta" href="#/search">Explore catalog</a>
+          <a class="secondary-cta" href="#/favorites">Saved anime</a>
+        </div>
+      </div>
+      <div class="hero-slider" id="heroSlider" aria-label="Trending anime slider"></div>
+    </section>
+
+    <section class="category-strip section-pad" aria-labelledby="categoryTitle">
+      <div class="section-heading compact">
+        <p class="eyebrow">Browse by vibe</p>
+        <h2 id="categoryTitle">Categories</h2>
+      </div>
+      <div class="category-list" id="categoryList"></div>
+    </section>
+
+    <div id="routeView" class="route-view" aria-live="polite"></div>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-grid">
+      <section>
+        <h2>AnimeVerse</h2>
+        <p>A fast anime discovery guide for finding popular series, top-rated shows, seasonal releases, trailers, character info, and legal places to watch.</p>
+      </section>
+      <section>
+        <h3>Contact</h3>
+        <p>Email: hello@animeverse.example</p>
+        <p>For takedown or correction requests, contact the site owner.</p>
+      </section>
+      <section>
+        <h3>Disclaimer</h3>
+        <p>No pirated content is hosted, embedded, linked, or promoted. Watch links point to legal platforms such as Crunchyroll and Netflix.</p>
+      </section>
+      <section>
+        <h3>Social</h3>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@dikshantpaul5912" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <div class="social-links">
+          <a href="#/search?order=popularity">Popular anime</a>
+          <a href="#/search?order=score">Top rated anime</a>
+          <a href="#/search?genre=1">Action anime</a>
+          <a href="#/search?genre=22">Romance anime</a>
+          <a href="#/privacy">Privacy Policy</a>
+          <a href="#/terms">Terms</a>
+          <a href="#/contact">Contact</a>
+        </div>
+      </section>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> AnimeVerse. Built for discovery, not piracy.</p>
+  </footer>
+
+  <button class="scroll-top icon-button" id="scrollTop" type="button" aria-label="Scroll to top">&uarr;</button>
+</body>
+</html>
