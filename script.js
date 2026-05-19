@@ -1,6 +1,7 @@
 "use strict";
 
 const API = "https://api.jikan.moe/v4";
+const SITE_NAME = "Anime Verse PRo";
 const SITE_URL = "https://animesteam14-create.github.io/AnimeVerse/";
 const LEGAL_LINKS = [
   ["Crunchyroll", "https://www.crunchyroll.com/search?q="],
@@ -200,8 +201,8 @@ function getRoute() {
 
 async function renderHome() {
   setSeo({
-    title: "AnimeVerse - Best Anime Discovery, Ratings & Legal Watch Links",
-    description: "Discover the best anime to watch next with trending shows, ratings, trailers, characters, episode info, favorites, and legal streaming links.",
+    title: `${SITE_NAME} - Best Anime Discovery, Ratings & Legal Watch Links`,
+    description: "Anime Verse PRo is a legal anime discovery guide for trending anime, top ratings, trailers, characters, episode info, favorites, and official watch links.",
     canonical: SITE_URL,
     type: "website"
   });
@@ -210,7 +211,7 @@ async function renderHome() {
       <div class="section-heading">
         <div><p class="eyebrow">Anime guide</p><h2>Find anime by rating, genre, trailer, and legal watch options</h2></div>
       </div>
-      <p>AnimeVerse is built for fans who want a fast way to discover what to watch next. Browse popular anime, compare scores, explore current seasonal releases, save favorites, and jump to official platforms such as Crunchyroll, Netflix, and Hulu when you are ready to watch legally.</p>
+      <p>Anime Verse PRo is built for fans who want a fast way to discover what to watch next. Browse popular anime, compare scores, explore current seasonal releases, save favorites, and jump to official platforms such as Crunchyroll, Netflix, and Hulu when you are ready to watch legally.</p>
       <div class="internal-links" aria-label="Popular anime discovery links">
         <a href="#/search?order=popularity">Most popular anime</a>
         <a href="#/search?order=score">Top rated anime</a>
@@ -271,9 +272,9 @@ async function renderHome() {
       <div>
         <p class="eyebrow">Legal watching only</p>
         <h2>Explore, save, compare, then watch on official platforms</h2>
-        <p class="section-copy">AnimeVerse is designed as a discovery guide, not a streaming host. That keeps the site safer for ads, creators, and users while still giving visitors useful reasons to browse.</p>
+        <p class="section-copy">Anime Verse PRo is designed as a discovery guide, not a streaming host. That keeps the site safer for ads, creators, and users while still giving visitors useful reasons to browse.</p>
       </div>
-      <div class="retention-stats" aria-label="AnimeVerse feature highlights">
+      <div class="retention-stats" aria-label="Anime Verse PRo feature highlights">
         <span><strong>Genres</strong> mood-based browsing</span>
         <span><strong>Watchlist</strong> local favorites</span>
         <span><strong>Details</strong> trailers and episodes</span>
@@ -307,8 +308,8 @@ async function renderSearch(params) {
   const genreName = GENRES.find((genre) => String(genre.id) === state.currentGenre)?.name;
   const titlePrefix = genreName ? `Best ${genreName} Anime` : state.currentQuery ? `Search Anime: ${state.currentQuery}` : "Search Anime by Genre, Rating & Popularity";
   setSeo({
-    title: `${titlePrefix} - AnimeVerse`,
-    description: "Search anime instantly by title, genre, rating, and popularity. Compare scores, save favorites, and open anime detail pages with trailers and legal watch links.",
+    title: `${titlePrefix} - ${SITE_NAME}`,
+    description: "Search anime instantly on Anime Verse PRo by title, genre, rating, and popularity. Compare scores, save favorites, trailers, and legal watch links.",
     canonical: `${SITE_URL}#/search${location.hash.includes("?") ? location.hash.slice(location.hash.indexOf("?")) : ""}`,
     type: "website"
   });
@@ -517,8 +518,8 @@ function adSlot(label) {
 
 function renderFavorites() {
   setSeo({
-    title: "Saved Anime Favorites - AnimeVerse Watchlist",
-    description: "View your locally saved anime favorites and quickly return to anime ratings, trailers, summaries, and legal watch links.",
+    title: `Saved Anime Favorites - ${SITE_NAME} Watchlist`,
+    description: "View your locally saved Anime Verse PRo favorites and quickly return to anime ratings, trailers, summaries, and legal watch links.",
     canonical: `${SITE_URL}#/favorites`,
     type: "website"
   });
@@ -536,41 +537,41 @@ function renderFavorites() {
 function renderTrustPage(page) {
   const pages = {
     about: {
-      title: "About AnimeVerse - Legal Anime Discovery Guide",
-      heading: "About AnimeVerse",
-      description: "Learn about AnimeVerse, a legal anime discovery guide for ratings, trailers, characters, favorites, and official watch links.",
+      title: `About ${SITE_NAME} - Legal Anime Discovery Guide`,
+      heading: `About ${SITE_NAME}`,
+      description: "Learn about Anime Verse PRo, a legal anime discovery guide for ratings, trailers, characters, favorites, and official watch links.",
       eyebrow: "About",
       body: `
-        <p>AnimeVerse helps fans discover anime through public metadata, ratings, trailers, characters, genres, and official platform search links. The site is built for discovery and guidance only.</p>
-        <p>AnimeVerse does not host, embed, upload, or promote pirated anime episodes or illegal streaming sources. Visitors should use licensed platforms available in their region.</p>
+        <p>Anime Verse PRo helps fans discover anime through public metadata, ratings, trailers, characters, genres, and official platform search links. The site is built for discovery and guidance only.</p>
+        <p>Anime Verse PRo does not host, embed, upload, or promote pirated anime episodes or illegal streaming sources. Visitors should use licensed platforms available in their region.</p>
       `
     },
     privacy: {
-      title: "Privacy Policy - AnimeVerse",
+      title: `Privacy Policy - ${SITE_NAME}`,
       heading: "Privacy Policy",
-      description: "Read the AnimeVerse privacy policy covering local favorites, ads, analytics, external links, and public anime metadata.",
+      description: "Read the Anime Verse PRo privacy policy covering local favorites, ads, analytics, external links, and public anime metadata.",
       eyebrow: "Privacy",
       body: `
-        <p>AnimeVerse stores favorites locally in your browser using localStorage. This watchlist stays on your device unless you clear browser data.</p>
+        <p>Anime Verse PRo stores favorites locally in your browser using localStorage. This watchlist stays on your device unless you clear browser data.</p>
         <p>The site may use advertising or analytics tools after publishing. These services may use cookies or similar technologies according to their own policies.</p>
-        <p>AnimeVerse links to external platforms such as Crunchyroll, Netflix, Hulu, YouTube, and anime database pages. External sites have their own privacy practices.</p>
+        <p>Anime Verse PRo links to external platforms such as Crunchyroll, Netflix, Hulu, YouTube, and anime database pages. External sites have their own privacy practices.</p>
       `
     },
     terms: {
-      title: "Terms of Use - AnimeVerse",
+      title: `Terms of Use - ${SITE_NAME}`,
       heading: "Terms of Use",
-      description: "Read the AnimeVerse terms for legal anime discovery, external links, public data, and responsible site usage.",
+      description: "Read the Anime Verse PRo terms for legal anime discovery, external links, public data, and responsible site usage.",
       eyebrow: "Terms",
       body: `
-        <p>AnimeVerse is an informational anime discovery website. Anime details, images, ratings, characters, and trailer data may come from public third-party sources.</p>
-        <p>All anime titles, images, videos, and trademarks belong to their respective owners. AnimeVerse does not claim ownership of third-party intellectual property.</p>
+        <p>Anime Verse PRo is an informational anime discovery website. Anime details, images, ratings, characters, and trailer data may come from public third-party sources.</p>
+        <p>All anime titles, images, videos, and trademarks belong to their respective owners. Anime Verse PRo does not claim ownership of third-party intellectual property.</p>
         <p>Users should not treat platform search links as availability guarantees. Streaming availability can vary by country, license, and subscription plan.</p>
       `
     },
     contact: {
-      title: "Contact AnimeVerse - Corrections, Ads & Takedown Requests",
-      heading: "Contact AnimeVerse",
-      description: "Contact AnimeVerse for corrections, feedback, advertising questions, takedown requests, or legal anime discovery suggestions.",
+      title: `Contact ${SITE_NAME} - Corrections, Ads & Takedown Requests`,
+      heading: `Contact ${SITE_NAME}`,
+      description: "Contact Anime Verse PRo for corrections, feedback, advertising questions, takedown requests, or legal anime discovery suggestions.",
       eyebrow: "Contact",
       body: `
         <p>For corrections, feedback, takedown requests, partnership questions, or advertising inquiries, contact the site owner at <strong>hello@animeverse.example</strong>.</p>
@@ -718,8 +719,10 @@ function setSeo({ title, description, canonical, image, type, schema }) {
   setMeta("meta[property='og:url']", "content", canonical || SITE_URL);
   setMeta("meta[property='og:type']", "content", type || "website");
   setMeta("meta[property='og:image']", "content", image || "https://cdn.myanimelist.net/images/anime/1208/94745l.jpg");
+  setMeta("meta[property='og:site_name']", "content", SITE_NAME);
   setMeta("meta[name='twitter:title']", "content", title);
   setMeta("meta[name='twitter:description']", "content", safeDescription);
+  setMeta("meta[name='twitter:image']", "content", image || "https://cdn.myanimelist.net/images/anime/1208/94745l.jpg");
   const schemaTag = document.querySelector("#baseSchema");
   if (schemaTag && schema) {
     schemaTag.textContent = JSON.stringify(schema);
@@ -727,9 +730,10 @@ function setSeo({ title, description, canonical, image, type, schema }) {
     schemaTag.textContent = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "AnimeVerse",
+      "name": SITE_NAME,
+      "alternateName": ["Anime Verse Pro", "AnimeVerse Pro", "AnimeVerse", "anime verse pro"],
       "url": SITE_URL,
-      "description": "AnimeVerse helps fans discover trending, popular, and top-rated anime with trailers, ratings, characters, and legal streaming links.",
+      "description": "Anime Verse PRo helps fans discover trending, popular, and top-rated anime with trailers, ratings, characters, and legal streaming links.",
       "potentialAction": {
         "@type": "SearchAction",
         "target": `${SITE_URL}#/search?q={search_term_string}`,
