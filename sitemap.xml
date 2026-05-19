@@ -2,61 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://animesteam14-create.github.io/AnimeVerse/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://animesteam14-create.github.io/AnimeVerse/#/search</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://animesteam14-create.github.io/AnimeVerse/#/search?order=popularity</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://animesteam14-create.github.io/AnimeVerse/#/search?order=score</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://animesteam14-create.github.io/AnimeVerse/#/search?genre=1</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://animesteam14-create.github.io/AnimeVerse/#/search?genre=22</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://animesteam14-create.github.io/AnimeVerse/#/about</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://animesteam14-create.github.io/AnimeVerse/#/privacy</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://animesteam14-create.github.io/AnimeVerse/#/terms</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://animesteam14-create.github.io/AnimeVerse/#/contact</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
